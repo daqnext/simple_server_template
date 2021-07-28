@@ -1,7 +1,7 @@
 var common = {
   //log-level
   loglevel:'DEBUG',
-  logfilename:'prod.log',
+  logfilename:'default.log',
   logtypes:['console','file'],
   /// server port 
   port: 80,
@@ -12,6 +12,7 @@ var common = {
   db_username:'root',
   db_password:'',
   db_name:'server_template',
+  db_pool_num:5,
 
   //redis
   redis_host:'127.0.0.1',

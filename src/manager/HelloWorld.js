@@ -1,7 +1,7 @@
 class HelloWorld{
 
     static echo(){
-        return "Hello World!";
+        return {'msg':'helloworld'};
     }
     
 }

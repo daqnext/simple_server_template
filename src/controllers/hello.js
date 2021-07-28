@@ -1,6 +1,8 @@
-import {app,ROOTDIR } from "../global.js";//all the global data and initialization
+import {koaRouter,ROOTDIR } from "../global.js";//all the global data and initialization
 import {HelloWorld} from "../manager/HelloWorld.js"
 
-app.get('/hello/world', (req, res) => {
-    res.send(HelloWorld.echo());
-})
+
+koaRouter.get('/hello/world',async (ctx,next) =>{
+    ctx.body={msg:HelloWorld.echo()};
+    await next();
+});
