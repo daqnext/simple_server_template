@@ -8,7 +8,6 @@ import fs from "fs"
 
 /////////ini koa //////////////////////////
 koaApp.use(json());
-console.log(ROOTDIR+'/assets/koa_static');
 koaApp.use(koastatic(ROOTDIR+'/assets/koa_static'));
 koaApp.use(koabodyparser());
 

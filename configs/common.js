@@ -11,7 +11,7 @@ var common = {
   db_port:'3306',
   db_username:'root',
   db_password:'',
-  db_name:'server_template',
+  db_name:'test',
   db_pool_num:5,
 
   //redis

@@ -1,5 +1,5 @@
 import {assert} from 'chai';
-import {args,ROOTDIR,app,redis,sqlpool} from "../src/global.js";
+import {args,ROOTDIR,redis,sqlpool,axios,randomstring} from "../src/global.js";
 
 
 describe('Args', function() {
@@ -36,19 +36,39 @@ describe('Redis', function() {
 });
 
 
-
-
 describe('sqldb', function() {
-
   it('pool-query', async function() {
-    
-        var err, rows, fields = await sqlpool.query("SELECT field FROM atable");
-        console.log(err);
-        console.log(rows);
-        console.log(fields);
-
+      //const [rows,fields] = await sqlpool.query("select * from test");
+      //await sqlpool.query("INSERT INTO test VALUES ('xdd','asdf')");
+      
   });
  
+});
+
+
+describe('axios', function() {
+
+    it('get', async function() {
+      //var result=await axios.get('https://baidu.com');
+      //console.log(result);            
+    });
+ 
+});
+
+
+describe('randomstring', function() {
+
+  it('20len', async function() {
+      let rs=randomstring.generate(20);
+      assert.equal(rs.length,20);
+  });
 
 });
+
+
+ 
+
+
+
+
 

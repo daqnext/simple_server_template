@@ -5,6 +5,9 @@ import {args} from  '../configs/args.js'
 import log4js from 'log4js';
 import ioredis from "ioredis";
 import mysql from "mysql2";
+import axios from "axios";
+import randomstring from "randomstring";
+
 
 //////////////////////////////////////////
 let ROOTDIR=path.resolve();
@@ -60,5 +63,5 @@ log4js.configure({
 
 let logger=log4js.getLogger('default');
 
-export {args,ROOTDIR,koaApp,koaRouter,logger,redis,sqlpool};
+export {args,ROOTDIR,koaApp,koaRouter,logger,redis,sqlpool,axios,randomstring};
 
