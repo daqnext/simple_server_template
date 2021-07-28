@@ -1,4 +1,4 @@
-module.exports = {
+var common = {
   //log-level
   loglevel:'DEBUG',
   logfilename:'prod.log',
@@ -24,3 +24,5 @@ module.exports = {
   cache_prefix:'temp_prod_'
  
 };
+
+export  {common}

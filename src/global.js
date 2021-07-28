@@ -1,17 +1,6 @@
 import express from 'express';
 import path from 'path';
-import minimist from 'minimist';
-import e from 'express';
-
- 
-
-///process the args
-var argv = minimist(process.argv.slice(2));
-
-//
-if(argv.config){
-
-}
+import {args} from  '../configs/args.js'
 
 ////////////////////////
 var ROOTDIR=path.resolve();
@@ -27,5 +16,5 @@ app.listen(PORT, function(err){
 ////////////////////////
 
 
-export {app,ROOTDIR};
+export {args,ROOTDIR,app};
 
