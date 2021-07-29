@@ -36,7 +36,6 @@
     "moment": "^2.29.1",
     "mysql2": "^2.2.5",
     "nodemailer": "^6.6.3",
-    "query-string": "^7.0.1",
     "randomstring": "^1.2.1"
   },
   "devDependencies": {

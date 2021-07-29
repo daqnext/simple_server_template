@@ -23,8 +23,8 @@ const redis = new ioredis({
     port:args.redis_port,
     host:args.redis_host,
     family:args.redis_family,
-    password:args.redis_password,
-    password:args.redis_db
+    db:args.redis_db,
+    //password:args.redis_password, 
 });
 
 // Create the connection pool. The pool-specific settings are the defaults
