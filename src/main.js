@@ -20,7 +20,7 @@ koaApp.use(async (ctx, next)=>{
             }           
     }catch(e){
         ctx.status = 500; ctx.body = "server error";
-        logger.error("erver error:",ctx.request);
+        logger.error("server error:",ctx.request,e);
     }
 });
 
