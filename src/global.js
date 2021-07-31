@@ -60,8 +60,8 @@ log4js.configure({
     },
 
     pm2: true,
-    pm2InstanceVar: 'INSTANCE_ID'
-    //disableClustering: true
+    pm2InstanceVar: 'INSTANCE_ID',
+    disableClustering: true
 });
 
 let logger=log4js.getLogger('default');

@@ -13,6 +13,7 @@
                             "ignore_watch": [
                                  
                             ],
+                            "merge_logs": true,
                             "args":["--config=specific1"],
                             "instances": "max",
                             "exec_mode": "cluster",
