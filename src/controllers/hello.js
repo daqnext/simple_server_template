@@ -1,5 +1,5 @@
-import {koaRouter,ROOTDIR } from "../global.js";//all the global data and initialization
-import {HelloWorld} from "../manager/HelloWorld.js"
+const {koaRouter,ROOTDIR } =require("../global.js");//all the global data and initialization
+const {HelloWorld} =require("../manager/HelloWorld.js");
 
 
 koaRouter.get('/hello/world',async (ctx,next) =>{

@@ -1,8 +1,8 @@
-import { args,koaApp,koaRouter,logger,ROOTDIR } from "./global.js";//all the global data and initialization
-import json from "koa-json";
-import koastatic from "koa-static";
-import koabodyparser from "koa-bodyparser";
-import fs from "fs"
+const { args,koaApp,koaRouter,logger,ROOTDIR } =require("./global.js");//all the global data and initialization
+const json=require("koa-json");
+const koastatic =require( "koa-static");
+const koabodyparser =require( "koa-bodyparser");
+const fs =require("fs");
 
 
 
@@ -24,9 +24,9 @@ koaApp.use(async (ctx, next)=>{
     }
 });
 
-/////////import all the controllers////////////
+/////////require all the controllers////////////
 fs.readdirSync(ROOTDIR+"/src/controllers").forEach(function(file) {
-    import (ROOTDIR+"/src/controllers/"+file)
+    require (ROOTDIR+"/src/controllers/"+file)
 });
 
 koaApp.use(koaRouter.routes()).use(koaRouter.allowedMethods());

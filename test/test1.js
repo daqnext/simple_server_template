@@ -1,13 +1,13 @@
-import {assert} from 'chai';
-import {args,ROOTDIR,redis,sqlpool,axios,randomstring} from "../src/global.js";
+const {assert} = require('chai');
+const {args,ROOTDIR,redis,sqlpool,axios,randomstring} =require("../src/global.js");
 
+ 
 
 describe('Args', function() {
   it('show all args', function() {
       assert.notEqual(args,null);
   });
 });
-
 
 
 describe('Redis', function() {

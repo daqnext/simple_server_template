@@ -26,4 +26,4 @@ var common = {
  
 };
 
-export  {common}
+module.exports= {common}

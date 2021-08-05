@@ -5,4 +5,4 @@ class HelloWorld{
     }
     
 }
-export {HelloWorld};
+module.exports={HelloWorld};

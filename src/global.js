@@ -1,12 +1,13 @@
-import koa from 'koa';
-import router from 'koa-router';
-import path from 'path';
-import {args} from  '../configs/args.js'
-import log4js from 'log4js';
-import ioredis from "ioredis";
-import mysql from "mysql2";
-import axios from "axios";
-import randomstring from "randomstring";
+const koa =require('koa');
+const router =require( 'koa-router');
+const path =require( 'path');
+const {args} =require(  '../configs/args.js');
+const log4js =require( 'log4js');
+const ioredis =require( "ioredis");
+const mysql =require( "mysql2");
+const axios =require( "axios");
+const randomstring =require( "randomstring");
+const { Module } = require('module');
 
 
 //////////////////////////////////////////
@@ -66,5 +67,5 @@ log4js.configure({
 
 let logger=log4js.getLogger('default');
 
-export {args,ROOTDIR,koaApp,koaRouter,logger,redis,sqlpool,axios,randomstring};
+module.exports={args,ROOTDIR,koaApp,koaRouter,logger,redis,sqlpool,axios,randomstring};
 
