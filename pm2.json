@@ -14,7 +14,7 @@
                                  
                             ],
                             "merge_logs": true,
-                            "args":["--config=specific1"],
+                            "args":["--config=prod"],
                             "instances": "max",
                             "exec_mode": "cluster",
                             "error_file": "./log/pm2_error.log",
